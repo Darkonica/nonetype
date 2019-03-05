@@ -10,7 +10,7 @@ mixin project(title, text, links, image)
     .project__image
       img(src="/img/projects/" + image, alt="")
 
-.projects
+.projects.wrapper.content__block
   h2.projects__title Projects
   +project(
     'Grace Makeup',

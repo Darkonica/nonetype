@@ -2,18 +2,24 @@
 
   &__list {
     list-style: none;
+    padding: 0;
   }
 
   &__list-item {
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
   }
 
   &__level {
+    width: 70%;
     list-style: none;
     display: flex;
     justify-content: space-between;
+    padding: 0;
   }
 
   &__level-circle {
