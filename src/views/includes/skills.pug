@@ -1,0 +1,27 @@
+mixin skill(text, level)
+  li.skills__list-item
+    div= text
+    +skillsLevel(level)
+
+mixin skillsLevel(level)
+  ul.skills__level
+    - let i = 0;
+    while i < 10
+      if (i < level)
+        li.skills__level-circle.skills__level-circle_active
+      else
+        li.skills__level-circle
+      - i++;
+
+.skills
+  h2.skills__title Skills
+
+  ul.skills__list
+    +skill('HTML', 8)
+    +skill('CSS', 9)
+    +skill('JS', 6)
+    +skill('React', 5)
+    +skill('SEO', 6)
+    +skill('Design', 4)
+    +skill('Backend', 2)
+    +skill('English', 6)

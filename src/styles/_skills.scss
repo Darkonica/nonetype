@@ -1,0 +1,30 @@
+.skills {
+
+  &__list {
+    list-style: none;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__level {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__level-circle {
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #2f2f2f;
+    border-radius: 50%;
+
+    &_active {
+      background: #2f2f2f;
+    }
+  }
+}
