@@ -1,0 +1,59 @@
+mixin project(title, text, links, image)
+  .project
+    .project__info
+      h3.project__title= title
+      .project__text= text
+      .project__links
+        each link in links
+          a(href=link.link).project__link= link.text
+
+    .project__image
+      img(src="/img/projects/" + image, alt="")
+
+.projects
+  h2.projects__title Projects
+  +project(
+    'Grace Makeup',
+    'Website for makeup artist and hair stylist with some functional for online courses with personal dashboard and etc.',
+    [
+      {
+        'link': 'https://github.com',
+        'text': 'github'
+      },
+      {
+        'link': 'https://grace-makeup.ru',
+        'text': 'website'
+      }
+    ],
+    'grace-makeup.jpg'
+  )
+  +project(
+    'Реф Юг',
+    'Website for Ref Ug company, design and development. Old project, made with Wordpress and fully custom design (no third-party theme).',
+    [
+      {
+        'link': 'https://behance.com',
+        'text': 'behance'
+      },
+      {
+        'link': 'https://ref-ug.ru',
+        'text': 'website'
+      }
+    ],
+    'grace-makeup.jpg'
+  )
+  +project(
+    'Travel landing',
+    'Just a landing (it’s more just a main page, actually) for training with Pug.',
+    [
+      {
+        'link': 'https://github.com',
+        'text': 'github'
+      },
+      {
+        'link': 'https://travel-landing.nonetype.ru',
+        'text': 'demo'
+      }
+    ],
+    'grace-makeup.jpg'
+  )

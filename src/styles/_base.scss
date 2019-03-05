@@ -3,8 +3,10 @@
 }
 
 body {
-  font: 16px 'Lato', sans-serif;
+  font: 16px 'Roboto Mono', sans-serif;
+  color: $text-color;
   line-height: 1.2;
+  background: $bg-color;
 }
 
 h1,
@@ -18,11 +20,13 @@ p {
 
 h1 {
   font-size: 48px;
+  font-weight: 400;
 }
 
 h2 {
-  font-weight: 500;
-  font-size: 35px;
+  font-weight: 400;
+  font-size: 36px;
+  margin-bottom: 60px;
 
   @include breakpoint(700px) {
     font-size: 28px;
@@ -30,13 +34,18 @@ h2 {
 }
 
 h3 {
-  font-weight: 500;
-  font-size: 30px;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 h4 {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -76,54 +85,19 @@ h4 {
     }
   }
 
-  &__header {
+  &__title {
+  }
+}
+
+.flex {
+  display: flex;
+
+  &_between {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 36px;
-  }
-
-  &__title {
-
-    &_underlined {
-
-      &:after {
-        content: '';
-        display: block;
-        width: 55%;
-        margin-top: 5px;
-        border-bottom: 2px solid $main-color;
-      }
-    }
   }
 }
 
-.button {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-color: $main-color;
-  color: #fff;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-}
-
-.link-arrow {
-  color: $main-color;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  &:after {
-    content: '';
-    display: inline-block;
-    width: 33px;
-    height: 10px;
-    margin-left: 25px;
-    background-image: url('/img/icons/arrow-right.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+.col-6 {
+  width: 45%;
 }

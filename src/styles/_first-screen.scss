@@ -1,0 +1,43 @@
+.first-screen {
+  display: flex;
+  align-items: center;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+
+  &__image {
+    max-width: 360px;
+    max-height: 360px;
+    width: 100%;
+    margin-right: 5vw;
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-right: 50px;
+
+    &:last-of-type {
+      margin-right: 0px;
+    }
+
+    a {
+      color: $text-color;
+    }
+  }
+}

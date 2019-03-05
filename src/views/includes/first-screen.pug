@@ -1,17 +1,17 @@
 mixin link(src, text)
   li.first-screen__link
-    a(href=src)= text
+    a(href=src target="_blank")= text
 
-.first-screen
+.first-screen.wrapper.content__block
   .first-screen__image
-    img(src="", alt="")
+    img(src="/img/personal-photo.jpg", alt="")
 
   .first-screen__info
     h1.first-screen__title Vladimir Novichikhin
     h3.first-screen__description junior frontend developer
 
-    .first-screen__links
+    ul.first-screen__links
       +link("http://github.com/darkonica", 'github')
-      +link("http://github.com/darkonica", 'github')
-      +link("http://github.com/darkonica", 'github')
-      +link("http://github.com/darkonica", 'github')
+      +link("http://github.com/darkonica", 'telegram')
+      +link("http://twitter.com/v_novichikhin", 'twitter')
+      +link("http://instagram.com/darkonica", 'instagram')

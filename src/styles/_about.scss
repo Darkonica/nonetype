@@ -1,0 +1,21 @@
+.about {
+  font-size: 18px;
+  line-height: 1.5;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  &__list-item {
+
+    &:before {
+      content: '- ';
+    }
+  }
+
+  &__text {
+    // line-height: 1.3;
+  }
+}
