@@ -62,22 +62,16 @@ img {
   }
 }
 
-.body-wrapper {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-.container {
-  flex: 1 0 auto;
-}
-
 .content {
 
   &__block {
     margin-bottom: 15vh;
 
     @include block-paddings(desktop);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
 
     @include breakpoint(450px) {
 
