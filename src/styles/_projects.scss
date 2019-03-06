@@ -1,0 +1,37 @@
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+
+  &:last-of-type {
+    margin-bottom: 0px;
+  }
+
+  &__info {
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__links {
+    margin-top: 40px;
+  }
+
+  &__link {
+    margin-right: 50px;
+    color: $text-color;
+  }
+
+  &__image {
+    border: 2px solid lighten($text-color, 20%);
+
+    img {
+      object-position: 50% 50%;
+      height: 230px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+}

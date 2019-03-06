@@ -1,14 +1,16 @@
 mixin project(title, text, links, image)
   .project
-    .project__info
-      h3.project__title= title
-      .project__text= text
-      .project__links
-        each link in links
-          a(href=link.link).project__link= link.text
+    .col-5
+      .project__info
+        h3.project__title= title
+        .project__text= text
+        .project__links
+          each link in links
+            a(href=link.link target="_blank").project__link= link.text
 
-    .project__image
-      img(src="/img/projects/" + image, alt="")
+    .col-5
+      .project__image
+        img(src="/img/projects/" + image, alt="")
 
 .projects.wrapper.content__block
   h2.projects__title Projects
@@ -40,7 +42,7 @@ mixin project(title, text, links, image)
         'text': 'website'
       }
     ],
-    'grace-makeup.jpg'
+    'ref-ug.png'
   )
   +project(
     'Travel landing',
@@ -55,5 +57,5 @@ mixin project(title, text, links, image)
         'text': 'demo'
       }
     ],
-    'grace-makeup.jpg'
+    'travel-landing.jpg'
   )

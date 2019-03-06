@@ -1,8 +1,8 @@
 .first-screen {
   display: flex;
   align-items: center;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
 
   &__image {
     max-width: 360px;
@@ -30,6 +30,7 @@
 
   &__link {
     display: inline-block;
+    font-size: 18px;
     margin-right: 50px;
 
     &:last-of-type {
