@@ -4,13 +4,31 @@
   margin-top: 20vh;
   margin-bottom: 20vh;
 
+  @include breakpoint(850px) {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  @include breakpoint(450px) {
+    margin-top: 50px;
+  }
+
   &__image {
     max-width: 360px;
-    max-height: 360px;
     width: 100%;
     margin-right: 5vw;
     border-radius: 50%;
     overflow: hidden;
+
+    @include breakpoint(1200px) {
+      max-width: 280px;
+    }
+
+    @include breakpoint(850px) {
+      max-width: 240px;
+      margin-right: 0px;
+      margin-bottom: 40px;
+    }
 
     img {
       display: block;
@@ -21,17 +39,42 @@
     margin-bottom: 10px;
   }
 
+  &__description {
+
+    @include breakpoint(1000px) {
+      font-size: 18px;
+    }
+  }
+
   &__links {
     list-style: none;
     padding: 0;
     margin-top: 50px;
     margin-bottom: 0;
+
+    @include breakpoint(1000px) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
   }
 
   &__link {
     display: inline-block;
     font-size: 18px;
     margin-right: 50px;
+
+    @include breakpoint(1000px) {
+      margin-right: 20px;
+    }
+
+    @include breakpoint(850px) {
+      margin-bottom: 10px;
+    }
+
+    @include breakpoint(400px) {
+      font-size: 16px;
+    }
 
     &:last-of-type {
       margin-right: 0px;

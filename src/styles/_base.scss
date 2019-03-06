@@ -21,6 +21,10 @@ p {
 h1 {
   font-size: 48px;
   font-weight: 400;
+
+  @include breakpoint(1000px) {
+    font-size: 36px;
+  }
 }
 
 h2 {
