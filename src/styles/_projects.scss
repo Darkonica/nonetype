@@ -4,19 +4,49 @@
   align-items: center;
   margin-bottom: 50px;
 
+  @include breakpoint(800px) {
+    flex-direction: column-reverse;
+    align-items: baseline;
+    margin-bottom: 80px;
+  }
+
   &:last-of-type {
     margin-bottom: 0px;
   }
 
   &__info {
+    width: 41.666667%;
+
+    @include breakpoint(1000px) {
+      width: 50%;
+    }
+
+    @include breakpoint(800px) {
+      width: 100%;
+    }
   }
 
   &__title {
     margin-bottom: 30px;
+
+    @include breakpoint(800px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+
+    @include breakpoint(450px) {
+      line-height: 1.5;
+    }
   }
 
   &__links {
     margin-top: 40px;
+
+    @include breakpoint(800px) {
+      margin-top: 30px;
+    }
   }
 
   &__link {
@@ -25,13 +55,35 @@
   }
 
   &__image {
+    width: 41.666667%;
     border: 2px solid lighten($text-color, 20%);
+
+    @include breakpoint(800px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
 
     img {
       object-position: 50% 50%;
       height: 230px;
       object-fit: cover;
       display: block;
+
+      @include breakpoint(800px) {
+        height: 260px;
+      }
+
+      @include breakpoint(700px) {
+        height: 230px;
+      }
+
+      @include breakpoint(600px) {
+        height: 180px;
+      }
+
+      @include breakpoint(450px) {
+        height: 150px;
+      }
     }
   }
 }

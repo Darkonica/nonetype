@@ -1,16 +1,16 @@
 mixin project(title, text, links, image)
   .project
-    .col-5
-      .project__info
-        h3.project__title= title
-        .project__text= text
-        .project__links
-          each link in links
-            a(href=link.link target="_blank").project__link= link.text
 
-    .col-5
-      .project__image
-        img(src="/img/projects/" + image, alt="")
+    .project__info
+      h3.project__title= title
+      .project__text= text
+      .project__links
+        each link in links
+          a(href=link.link target="_blank").project__link= link.text
+
+
+    .project__image
+      img(src="/img/projects/" + image, alt="")
 
 .projects.wrapper.content__block
   h2.projects__title Projects

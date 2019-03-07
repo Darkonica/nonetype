@@ -32,8 +32,8 @@ h2 {
   font-size: 36px;
   margin-bottom: 60px;
 
-  @include breakpoint(700px) {
-    font-size: 28px;
+  @include breakpoint(600px) {
+    margin-bottom: 40px;
   }
 }
 
@@ -96,10 +96,31 @@ img {
   }
 }
 
-.col-6 {
-  width: 50%;
+.second-block {
+
+  @include breakpoint(850px) {
+    flex-direction: column;
+  }
 }
 
-.col-5 {
+.about-cont {
   width: 41.6666667%;
+
+  @include breakpoint(1000px) {
+    width: 50%;
+  }
+
+  @include breakpoint(850px) {
+    width: 100%;
+    margin-bottom: 15vh;
+  }
+}
+
+.skills-cont {
+  width: 41.6666667%;
+
+  @include breakpoint(850px) {
+    max-width: 600px;
+    width: 100%;
+  }
 }

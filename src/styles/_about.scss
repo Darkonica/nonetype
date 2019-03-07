@@ -1,8 +1,8 @@
 .about {
   font-size: 18px;
-  line-height: 1.5;
 
   &__list {
+    line-height: 1.5;
     list-style: none;
     padding: 0;
     margin-bottom: 30px;
@@ -16,6 +16,6 @@
   }
 
   &__text {
-    // line-height: 1.3;
+    line-height: 1.5;
   }
 }
