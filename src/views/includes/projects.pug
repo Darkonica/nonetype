@@ -7,8 +7,7 @@ mixin project(title, text, links, image)
       .project__links
         each link in links
           a(href=link.link target="_blank").project__link= link.text
-
-
+          
     .project__image
       img(src="/img/projects/" + image, alt="")
 
@@ -34,7 +33,7 @@ mixin project(title, text, links, image)
     'Сайт для компании Реф Юг, занимающейся продажей промышленного холодильного оборудования. Старый проект, Wordpress с кастомной темой (без использования сторонних готовых тем). Дизайн и разработка.',
     [
       {
-        'link': 'https://behance.com',
+        'link': 'https://www.behance.net/gallery/52425549/REF-UG-website-(design-and-development)',
         'text': 'behance'
       },
       {
@@ -49,13 +48,34 @@ mixin project(title, text, links, image)
     'Обычный лендинг (больше просто главная страница, на самом деле) для освоения препроцессора Pug. Разработка, дизайн сторонний.',
     [
       {
-        'link': 'https://github.com',
+        'link': 'https://github.com/darkonica/travel-landing',
         'text': 'github'
       },
-      {
-        'link': 'https://travel-landing.nonetype.ru',
-        'text': 'demo'
-      }
+      
     ],
     'travel-landing.jpg'
+  )
+  +project(
+    'Exchange Converter',
+    'Конвертер валют, React, Redux, Astroturf. Для тренировки.',
+    [
+      {
+        'link': 'https://github.com/darkonica/currency-converter',
+        'text': 'github'
+      },
+      
+    ],
+    'currency-converter.png'
+  )
+  +project(
+    'Todo App',
+    'Todo App на React и Redux, для тренировки',
+    [
+      {
+        'link': 'https://github.com/darkonica/redux-todo',
+        'text': 'github'
+      },
+      
+    ],
+    'todo-app.png'
   )
