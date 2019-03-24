@@ -6,7 +6,13 @@ Onepage website with just a few blocks for job search
 ### Installing
 
 ```
+npm install
+
+```
+or
+```
 yarn install
+
 ```
 
 

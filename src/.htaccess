@@ -1,3 +1,8 @@
+RewriteEngine On 
+RewriteCond %{HTTP_HOST} ^nonetype\.ru [NC]
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://nonetype.ru/$1 [R,L]
+
 #GZIP
 <IfModule mod_deflate.c>
 	AddOutputFilterByType DEFLATE text/plain

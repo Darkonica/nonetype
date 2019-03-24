@@ -1,0 +1,29 @@
+.about-full {
+  font-size: 18px;
+  line-height: 1.8;
+
+  @include breakpoint(950px) {
+    line-height: 1.5;
+  }
+
+  &__subheader {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  &__list-item {
+    margin-bottom: 10px;
+
+    &:before {
+      content: '- ';
+    }
+  }
+}

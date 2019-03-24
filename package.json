@@ -1,10 +1,10 @@
 {
-  "name": "gulppack",
-  "description": "Frontend development with pleasure",
-  "author": "Andrey Gorokhov, Alexey Khabarovskii",
+  "name": "nonetype",
+  "description": "Personal CV website",
+  "author": "Vladimir Novichikhin",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andreyalexeich/gulppack-pug.git"
+    "url": "https://github.com/darkonica/nonetype.git"
   },
   "license": "MIT",
   "devDependencies": {
