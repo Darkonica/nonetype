@@ -2,7 +2,7 @@ module.exports = function() {
   $.gulp.task('pug', function() {
     return $.gulp
       .src([
-        './src/views/**/index.pug',
+        './src/views/**/*.pug',
         '!./src/views/**/layout.pug',
         '!./src/views/blocks/*.pug',
         '!./src/views/includes/*.pug',

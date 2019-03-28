@@ -1,0 +1,19 @@
+.notfound {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &__wrapper {
+    max-width: 800px;
+  }
+
+  &__title {
+    font-size: 192px;
+    margin-bottom: 40px;
+
+    @include breakpoint(500px) {
+      font-size: 96px;
+    }
+  }
+}
