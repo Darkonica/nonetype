@@ -6,7 +6,7 @@ mixin project(title, text, links, image)
       .project__text= text
       .project__links
         each link in links
-          a(href=link.link target="_blank").project__link= link.text
+          a(href=link.link target="_blank" rel="noreferrer").project__link= link.text
           
     .project__image
       img(src="/img/projects/" + image, alt="")
